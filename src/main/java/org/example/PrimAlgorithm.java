@@ -45,3 +45,4 @@ public class PrimAlgorithm {
                 graph.edges.size(), operations, timeMs);
     }
 }
+
