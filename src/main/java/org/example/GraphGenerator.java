@@ -25,7 +25,7 @@ public class GraphGenerator {
     public static void main(String[] args) {
         List<Graph> allGraphs = new ArrayList<>();
 
-        // ✅ Category configurations
+        //  Category configurations
         int smallCount = 5;      // IDs 1–5
         int mediumCount = 10;    // IDs 6–15
         int largeCount = 10;     // IDs 16–25
@@ -44,8 +44,9 @@ public class GraphGenerator {
         output.put("graphs", allGraphs);
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
         try (FileWriter writer = new FileWriter("assign_3_input_generated.json")) {
-            gson.toJson(output, writer);
+            ((Gson) gson).toJson(output, writer);
             System.out.println("✅ Graphs generated successfully!");
             System.out.println("Total graphs: " + allGraphs.size());
             System.out.println("Saved to assign_3_input_generated.json");
