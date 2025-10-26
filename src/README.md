@@ -152,8 +152,7 @@ mvn test
 }
 ```
 Data types:
-```
-```
+
 | Field      | Type           | Description     |
 | ---------- | -------------- | --------------- |
 | `id`       | `int`          | Graph ID        |
@@ -186,8 +185,7 @@ Data types:
 }
 ```
 🧠 Data Type Summary:
-```
-```
+
 | Class       | Field               | Type           | Description                    |
 | ----------- | ------------------- | -------------- | ------------------------------ |
 | `Graph`     | `id`                | `int`          | Unique graph ID                |
