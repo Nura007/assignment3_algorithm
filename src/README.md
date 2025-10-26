@@ -260,5 +260,5 @@ This project demonstrates the implementation and comparison of two fundamental a
 
 # 🧾 References
 - [CLRS: Introduction to Algorithms (Cormen et al.)](https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/)
-- [GeeksforGeeks: Prim’s Algorithm](https://www.geeksforgeeks.org/prims-algorithm/)
-- [GeeksforGeeks: Kruskal’s Algorithm](https://www.geeksforgeeks.org/kruskals-algorithm/)
+- [GeeksforGeeks: Prim’s Algorithm](https://www.geeksforgeeks.org/java/prims-algorithm-with-a-java-implementation/)
+- [GeeksforGeeks: Kruskal’s Algorithm](https://www.geeksforgeeks.org/java/kruskals-algorithm-in-java/)
