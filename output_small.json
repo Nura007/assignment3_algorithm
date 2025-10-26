@@ -34,7 +34,7 @@
         "vertices": 5,
         "edges": 10,
         "operations_count": 4,
-        "execution_time_ms": 1.6277
+        "execution_time_ms": 1.2154
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -64,7 +64,7 @@
         "vertices": 5,
         "edges": 10,
         "operations_count": 46,
-        "execution_time_ms": 1.1079
+        "execution_time_ms": 1.1865
       }
     },
     {
@@ -161,7 +161,7 @@
         "vertices": 17,
         "edges": 42,
         "operations_count": 19,
-        "execution_time_ms": 0.1027
+        "execution_time_ms": 0.2002
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -251,7 +251,7 @@
         "vertices": 17,
         "edges": 42,
         "operations_count": 206,
-        "execution_time_ms": 0.0878
+        "execution_time_ms": 0.0976
       }
     },
     {
@@ -343,7 +343,7 @@
         "vertices": 16,
         "edges": 40,
         "operations_count": 23,
-        "execution_time_ms": 0.0802
+        "execution_time_ms": 0.0578
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -428,7 +428,7 @@
         "vertices": 16,
         "edges": 40,
         "operations_count": 199,
-        "execution_time_ms": 0.0772
+        "execution_time_ms": 0.1056
       }
     },
     {
@@ -545,7 +545,7 @@
         "vertices": 21,
         "edges": 52,
         "operations_count": 30,
-        "execution_time_ms": 0.0711
+        "execution_time_ms": 0.0761
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -655,7 +655,7 @@
         "vertices": 21,
         "edges": 52,
         "operations_count": 256,
-        "execution_time_ms": 0.1083
+        "execution_time_ms": 0.0848
       }
     },
     {
@@ -742,7 +742,7 @@
         "vertices": 15,
         "edges": 37,
         "operations_count": 22,
-        "execution_time_ms": 0.0544
+        "execution_time_ms": 0.0464
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -822,7 +822,7 @@
         "vertices": 15,
         "edges": 37,
         "operations_count": 186,
-        "execution_time_ms": 0.0657
+        "execution_time_ms": 0.0438
       }
     }
   ]

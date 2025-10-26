@@ -2919,7 +2919,7 @@
         "vertices": 582,
         "edges": 1455,
         "operations_count": 1442,
-        "execution_time_ms": 1.2527
+        "execution_time_ms": 1.3093
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -5834,7 +5834,7 @@
         "vertices": 582,
         "edges": 1455,
         "operations_count": 7779,
-        "execution_time_ms": 1.6872
+        "execution_time_ms": 1.4031
       }
     },
     {
@@ -10361,7 +10361,7 @@
         "vertices": 903,
         "edges": 2257,
         "operations_count": 2054,
-        "execution_time_ms": 2.8419
+        "execution_time_ms": 2.012
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -14881,7 +14881,7 @@
         "vertices": 903,
         "edges": 2257,
         "operations_count": 12018,
-        "execution_time_ms": 2.0421
+        "execution_time_ms": 1.5156
       }
     },
     {
@@ -18308,7 +18308,7 @@
         "vertices": 683,
         "edges": 1707,
         "operations_count": 1693,
-        "execution_time_ms": 1.6284
+        "execution_time_ms": 1.7554
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -21728,7 +21728,7 @@
         "vertices": 683,
         "edges": 1707,
         "operations_count": 9065,
-        "execution_time_ms": 1.0696
+        "execution_time_ms": 1.1605
       }
     },
     {
@@ -23495,7 +23495,7 @@
         "vertices": 351,
         "edges": 877,
         "operations_count": 792,
-        "execution_time_ms": 0.6994
+        "execution_time_ms": 0.6876
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -25255,7 +25255,7 @@
         "vertices": 351,
         "edges": 877,
         "operations_count": 4661,
-        "execution_time_ms": 0.7254
+        "execution_time_ms": 0.5496
       }
     },
     {
@@ -28722,7 +28722,7 @@
         "vertices": 691,
         "edges": 1727,
         "operations_count": 1723,
-        "execution_time_ms": 1.5704
+        "execution_time_ms": 1.6082
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -32182,7 +32182,7 @@
         "vertices": 691,
         "edges": 1727,
         "operations_count": 9166,
-        "execution_time_ms": 1.148
+        "execution_time_ms": 1.4297
       }
     },
     {
@@ -37044,7 +37044,7 @@
         "vertices": 970,
         "edges": 2425,
         "operations_count": 2368,
-        "execution_time_ms": 2.6249
+        "execution_time_ms": 2.975
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -41899,7 +41899,7 @@
         "vertices": 970,
         "edges": 2425,
         "operations_count": 12927,
-        "execution_time_ms": 1.6821
+        "execution_time_ms": 1.5107
       }
     },
     {
@@ -45736,7 +45736,7 @@
         "vertices": 765,
         "edges": 1912,
         "operations_count": 1852,
-        "execution_time_ms": 2.0836
+        "execution_time_ms": 1.2609
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -49566,7 +49566,7 @@
         "vertices": 765,
         "edges": 1912,
         "operations_count": 10148,
-        "execution_time_ms": 1.3783
+        "execution_time_ms": 1.1318
       }
     },
     {
@@ -54328,7 +54328,7 @@
         "vertices": 950,
         "edges": 2375,
         "operations_count": 2362,
-        "execution_time_ms": 1.8463
+        "execution_time_ms": 1.5398
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -59083,7 +59083,7 @@
         "vertices": 950,
         "edges": 2375,
         "operations_count": 12653,
-        "execution_time_ms": 1.6012
+        "execution_time_ms": 1.5334
       }
     },
     {
@@ -62250,7 +62250,7 @@
         "vertices": 631,
         "edges": 1577,
         "operations_count": 1538,
-        "execution_time_ms": 1.0786
+        "execution_time_ms": 1.0651
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -65410,7 +65410,7 @@
         "vertices": 631,
         "edges": 1577,
         "operations_count": 8412,
-        "execution_time_ms": 0.9877
+        "execution_time_ms": 1.0502
       }
     },
     {
@@ -69582,7 +69582,7 @@
         "vertices": 832,
         "edges": 2080,
         "operations_count": 1945,
-        "execution_time_ms": 1.1404
+        "execution_time_ms": 1.2098
       },
       "kruskal": {
         "algorithm": "Kruskal",
@@ -73747,7 +73747,7 @@
         "vertices": 832,
         "edges": 2080,
         "operations_count": 11094,
-        "execution_time_ms": 1.1807
+        "execution_time_ms": 1.3947
       }
     }
   ]
