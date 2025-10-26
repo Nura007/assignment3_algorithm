@@ -1,6 +1,6 @@
-# 🧮 Assignment 3 — Minimum Spanning Tree (MST)
+# 🧮 Assignment 3
 
-### 📚 Course: Data Structures and Algorithms
+### 📚 Course: Design and Analysis of Algorithms
 ### 🧑‍💻 Author: Nurtilek
 ### 🗓️ Project: Design and Implementation of Graph Algorithms (Prim & Kruskal)
 
