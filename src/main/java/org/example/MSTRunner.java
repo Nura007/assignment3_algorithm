@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- * MSTRunner (Final)
+ * MSTRunner
  * Automatically processes all input JSON files:
  *   input_small.json → output_small.json
  *   input_medium.json → output_medium.json
@@ -71,7 +71,7 @@ public class MSTRunner {
     }
 }
 
-/** Supporting JSON data classes */
+/** JSON data classes */
 
 class InputData {
     List<Graph> graphs;
