@@ -54,13 +54,13 @@ assignment3_design/
 
 ### 🔹 **GraphGenerator.java**
 Generates connected, undirected, weighted graphs of four categories:
-```| Category | Range of Vertices | ID Range | Description |
+
+| Category | Range of Vertices | ID Range | Description |
 |-----------|------------------|-----------|--------------|
 | Small | 5–30 | 1–5 | Small test graphs |
 | Medium | 30–300 | 6–15 | Mid-sized graphs |
 | Large | 300–1000 | 16–25 | Large graphs |
 | Extra Large | 1000–2000 | 26–28 | Very large graphs |
-```
 
 Each graph contains:
 - A list of nodes (vertices)
