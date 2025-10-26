@@ -8,20 +8,20 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- * GraphGenerator (Final v2)
- * Generates connected, undirected, weighted graphs.
- * Saves separate JSON files for each category:
- *  → input_small.json
- *  → input_medium.json
- *  → input_large.json
- *  → input_extralarge.json
+ * GraphGenerator (Final v3)
+ * Generates exactly 28 graphs:
+ *  small:       1–5
+ *  medium:      6–15
+ *  large:       16–25
+ *  extralarge:  26–28
+ * One graph per ID (no density variants)
  */
 public class GraphGenerator {
 
     private static final Random random = new Random();
 
     public static void main(String[] args) {
-        //  Category configurations
+        // generate 4 categories separately
         generateCategoryToFile("small", 5, 30, 1, 5);
         generateCategoryToFile("medium", 30, 300, 6, 15);
         generateCategoryToFile("large", 300, 1000, 16, 25);
@@ -38,12 +38,10 @@ public class GraphGenerator {
 
         for (int i = startId; i <= endId; i++) {
             int n = randBetween(minNodes, maxNodes - 1);
-            for (String density : new String[]{"sparse", "medium", "dense"}) {
-                int targetEdges = chooseTargetEdgeCount(n, density);
-                Graph g = generateConnectedGraph(category, density, n, targetEdges);
-                g.id = idCounter++;
-                graphs.add(g);
-            }
+            int targetEdges = chooseTargetEdgeCount(n);
+            Graph g = generateConnectedGraph(category, n, targetEdges);
+            g.id = idCounter++;
+            graphs.add(g);
         }
 
         Map<String, Object> output = new HashMap<>();
@@ -61,13 +59,13 @@ public class GraphGenerator {
     }
 
     /** Create connected undirected weighted graph */
-    private static Graph generateConnectedGraph(String category, String density, int n, int targetEdges) {
-        Graph graph = new Graph(category, density);
+    private static Graph generateConnectedGraph(String category, int n, int targetEdges) {
+        Graph graph = new Graph(category);
         for (int i = 0; i < n; i++) {
             graph.nodes.add(String.valueOf(i));
         }
 
-        // Step 1: ensure connectivity with random spanning tree
+        // Step 1: create random spanning tree to ensure connectivity
         List<String> shuffled = new ArrayList<>(graph.nodes);
         Collections.shuffle(shuffled, random);
         Set<Set<String>> edgeSet = new HashSet<>();
@@ -96,25 +94,14 @@ public class GraphGenerator {
             edgeSet.add(pair);
             remaining--;
         }
+
         return graph;
     }
 
-    /** Determine target edge count based on density */
-    private static int chooseTargetEdgeCount(int n, String density) {
+    /** Estimate target edge count (medium density) */
+    private static int chooseTargetEdgeCount(int n) {
         int maxE = n * (n - 1) / 2;
-        return switch (density) {
-            case "sparse" -> Math.max(n - 1, (int) (1.25 * n));
-            case "medium" -> Math.min(maxE, (int) (3 * n));
-            case "dense" -> {
-                double factor;
-                if (n < 50) factor = 0.5;
-                else if (n < 300) factor = 0.2;
-                else if (n < 1000) factor = 0.05;
-                else factor = 0.02;
-                yield Math.min(maxE, (int) (factor * maxE));
-            }
-            default -> Math.max(n - 1, n);
-        };
+        return Math.min(maxE, (int) (2.5 * n)); // moderate density
     }
 
     private static int randBetween(int min, int max) {
@@ -139,12 +126,10 @@ class Edge {
 class Graph {
     int id;
     String category;
-    String density;
     List<String> nodes = new ArrayList<>();
     List<Edge> edges = new ArrayList<>();
 
-    Graph(String category, String density) {
+    Graph(String category) {
         this.category = category;
-        this.density = density;
     }
 }
