@@ -1,7 +1,7 @@
 # 🧮 Assignment 3
 
 ### 📚 Course: Design and Analysis of Algorithms
-### 🧑‍💻 Author: Nurtilek
+### 🧑‍💻 Author: Nurtilek Koblandy
 ### 🗓️ Project: Design and Implementation of Graph Algorithms (Prim & Kruskal)
 
 ---
