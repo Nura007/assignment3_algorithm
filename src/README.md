@@ -160,8 +160,8 @@ Data types:
 | `nodes`    | `List<String>` | Vertex names    |
 | `edges`    | `List<Edge>`   | Graph edges     |
 
-```
 📊 Output Data Format
+```
 {
   "results": [
     {
