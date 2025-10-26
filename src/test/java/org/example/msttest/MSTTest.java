@@ -21,15 +21,12 @@ public class MSTTest {
         g.edges.add(new Edge("C", "D", 3));
         g.edges.add(new Edge("A", "D", 10));
 
-        // Запускаем оба алгоритма
         MSTResult prim = PrimAlgorithm.run(g);
         MSTResult kruskal = KruskalAlgorithm.run(g);
 
-        // Проверяем, что MST одинаковые по стоимости
         assertEquals(prim.total_cost, kruskal.total_cost,
                 "❌ MST costs must be equal");
 
-        // Проверяем, что MST имеет V-1 рёбер
         assertEquals(g.nodes.size() - 1, prim.mst_edges.size(),
                 "❌ Prim MST must have V-1 edges");
         assertEquals(g.nodes.size() - 1, kruskal.mst_edges.size(),
