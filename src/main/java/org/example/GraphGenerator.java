@@ -8,13 +8,12 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- * GraphGenerator (Final v3)
+ * GraphGenerator
  * Generates exactly 28 graphs:
  *  small:       1–5
  *  medium:      6–15
  *  large:       16–25
  *  extralarge:  26–28
- * One graph per ID (no density variants)
  */
 public class GraphGenerator {
 
@@ -28,7 +27,6 @@ public class GraphGenerator {
         generateCategoryToFile("extralarge", 1000, 2000, 26, 28);
     }
 
-    /** Generates graphs for one category and writes to a separate JSON file */
     private static void generateCategoryToFile(String category, int minNodes, int maxNodes,
                                                int startId, int endId) {
         List<Graph> graphs = new ArrayList<>();
@@ -58,14 +56,12 @@ public class GraphGenerator {
         }
     }
 
-    /** Create connected undirected weighted graph */
     private static Graph generateConnectedGraph(String category, int n, int targetEdges) {
         Graph graph = new Graph(category);
         for (int i = 0; i < n; i++) {
             graph.nodes.add(String.valueOf(i));
         }
 
-        // Step 1: create random spanning tree to ensure connectivity
         List<String> shuffled = new ArrayList<>(graph.nodes);
         Collections.shuffle(shuffled, random);
         Set<Set<String>> edgeSet = new HashSet<>();
@@ -78,7 +74,6 @@ public class GraphGenerator {
             edgeSet.add(Set.of(u, v));
         }
 
-        // Step 2: add extra random edges up to targetEdges
         int maxEdges = n * (n - 1) / 2;
         targetEdges = Math.min(targetEdges, maxEdges);
         int remaining = targetEdges - (n - 1);
@@ -98,7 +93,6 @@ public class GraphGenerator {
         return graph;
     }
 
-    /** Estimate target edge count (medium density) */
     private static int chooseTargetEdgeCount(int n) {
         int maxE = n * (n - 1) / 2;
         return Math.min(maxE, (int) (2.5 * n)); // moderate density
@@ -109,27 +103,3 @@ public class GraphGenerator {
     }
 }
 
-/** Edge class */
-class Edge {
-    String from;
-    String to;
-    int weight;
-
-    Edge(String from, String to, int weight) {
-        this.from = from;
-        this.to = to;
-        this.weight = weight;
-    }
-}
-
-/** Graph class */
-class Graph {
-    int id;
-    String category;
-    List<String> nodes = new ArrayList<>();
-    List<Edge> edges = new ArrayList<>();
-
-    Graph(String category) {
-        this.category = category;
-    }
-}
